@@ -51,9 +51,15 @@ dojo = {
     'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
     'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
+
+# def printInfo(some_dict):
+#     for x in some_dict:
+#         print(x)
+# printInfo(dojo)
+
 def printInfo(some_dict):
-    for x in some_dict:
-        print(f"\n{len(some_dict[x])} {x.upper()}")
-        for z in range(len(some_dict[x])):
-            print (some_dict[x][z])
+    for key in some_dict:
+        print(f"\n{len(some_dict[key])} {key.upper()}")
+        for y in some_dict[key]:
+            print (y)
 printInfo(dojo)
